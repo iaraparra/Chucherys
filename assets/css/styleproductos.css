@@ -24,6 +24,9 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: aparecer;
 }
 .li{
     display: flex;
@@ -121,4 +124,26 @@ a {
     .contenedorTarjetas {
         justify-content: space-between;
     }
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    };
+    100%{
+        opacity: 1;
+    };
+}
+.logo__imagen:hover{
+    transform: scale(1.2);
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+.footer__boton:hover{
+    background-color: rgb(34, 3, 29);
+    color: white;
+}
+.tarjeta:hover{
+    transform: scale(1.1);
 }
