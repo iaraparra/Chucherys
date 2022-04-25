@@ -25,6 +25,9 @@ a {
     background-image: url(../multimedia/imagenes/fondo\ chucherys.jpg);
     background-size: cover;
     background-position: center;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: aparecer;
 }
 
 .logo {
@@ -33,6 +36,9 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 5px;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: aparecer;
 }
 .li{
     display: flex;
@@ -152,4 +158,13 @@ a {
         justify-content: space-between;
     }
     
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    };
+    100%{
+        opacity: 1;
+    };
 }
