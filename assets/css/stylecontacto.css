@@ -24,6 +24,9 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: aparecer;
 }
 .li{
     display: flex;
@@ -73,7 +76,7 @@ a {
 }
 
 @media (min-width:1200px) {
-    .contenedorLocal {
+    .contenedorContacto {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 100px 40px 400px 60px;
@@ -100,4 +103,38 @@ a {
         display: inline;
         padding: 10px;
     }
+    .completar{
+        transition: 4s;
+    }
+    .completar:focus{
+        width: 300px;
+    }
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    };
+    100%{
+        opacity: 1;
+    };
+}
+.logo__imagen:hover{
+    transform: scale(1.2);
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+.footer__boton:hover{
+    background-color: rgb(34, 3, 29);
+    color: white;
+}
+
+.boton__enviar:hover{
+    background-color: rgb(34, 3, 29);
+    color: white;
+}
+.boton__borrar:hover{
+    background-color: rgb(34, 3, 29);
+    color: white;
 }
