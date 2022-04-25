@@ -43,6 +43,7 @@ a {
 .li{
     display: flex;
     justify-content: center;
+    transition: 3s;
 }
 
 .nav{
@@ -150,6 +151,11 @@ a {
         padding: 10px;
     }
 
+    .li:hover{
+        transform: scale(1.2);
+        color: rgb(109, 36, 99);
+    }
+
     .titulo--nuevos {
         font-size: 20pt;
     }
@@ -167,4 +173,18 @@ a {
     100%{
         opacity: 1;
     };
+}
+.logo__imagen:hover{
+    transform: scale(1.2);
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+.footer__boton:hover{
+    background-color: rgb(34, 3, 29);
+    color: white;
+}
+.tarjeta:hover{
+    transform: scale(1.1);
 }
